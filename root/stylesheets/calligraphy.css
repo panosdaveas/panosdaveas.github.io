@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+#calligraphy {
+    height: 100%;
+    /*height: calc(100vh - 100px);*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /*padding-top: 20vh;*/
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #09111b;
+}
+.container h1 {
+/*h1 {*/
+    font-size: 10vh;
+    font-family: "Pacifico";
+    color: white;
+    animation: neon 5s infinite;
+}
+
+@keyframes neon {
+    0%, 39%, 41%, 59%, 61%, 100% {
+        text-shadow:
+                white 0 0 12px,
+                #ff3aad 0 0 24px,
+                #ff3aad 0 0 36px;
+    }
+
+    40%, 60% {
+        text-shadow: none;
+    }
+
+}
