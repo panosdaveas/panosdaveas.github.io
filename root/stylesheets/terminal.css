@@ -19,7 +19,7 @@ body {
   margin-left: -8.5em;
   text-align: left;
   font-family: Nunito;
-  display: flex;
+  /* display: flex; */
   font-size: 3vh;
   font-family: monospace;
   white-space: nowrap;
