@@ -8,10 +8,9 @@ body {
   box-sizing: border-box;
   width: 350px;
   margin: 0 auto;
-  /*padding: 20px;*/
   padding-top: 40px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  /*border-bottom-left-radius: 5px;*/
+  /*border-bottom-right-radius: 5px;*/
 }
 
 .container p {
@@ -22,6 +21,7 @@ body {
   font-family: Nunito;
   font-size: 35px;
   font-size: 2.22vw;
+  /*font-size: 2.25em;*/
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
