@@ -20,9 +20,7 @@ body {
   text-align: left;
   font-family: Nunito;
   display: flex;
-  /* font-size: 35px; */
-  font-size: 2.22vw;
-  /*font-size: 2.25em;*/
+  font-size: 3vh;
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
