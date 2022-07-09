@@ -6,6 +6,16 @@
   padding: 0;
 }
 
+.inner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spacer {
+  padding-top: 4vh;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -17,9 +27,18 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  /*background: #5661f2;*/
   background: #09111b;
   display: flex;
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background: #09111b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 /*** Navigation Styles ***/
@@ -134,8 +153,9 @@ li a {
   height: calc(100vh - 160px);
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   margin-top: 160px;
+  background-color: #09111b;
 }
 
 #head-line {
@@ -186,7 +206,6 @@ section:nth-child(odd) {
   background: #79edfc;
 }
 section:nth-child(even) {
-  /*background: #79edfc;*/
   background: #fa6c98;
 }
 

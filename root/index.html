@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <title>HelloWorld</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/menu.js"></script>
-    <script type="text/javascript" src="javascript/include.js"></script>
-    <script type="text/javascript" src="javascript/counter.js"></script>
+    <script type="text/javascript" src="static/js/menu.js"></script>
+    <script type="text/javascript" src="static/js/include.js"></script>
+    <script type="text/javascript" src="static/js/counter.js"></script>
+    <script type="text/javascript" src="static/js/editor.js"></script>
     <link
-  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
-  rel="stylesheet"  type='text/css'>
-    <link href="stylesheets/calligraphy.css" rel="stylesheet" type="text/css">
-    <link href="stylesheets/counter.css" rel="stylesheet" type="text/css">
-    <link href="stylesheets/nav.css" rel="stylesheet" type="text/css">
-    <link href="stylesheets/share.css" rel="stylesheet" type="text/css">
-    <link href="stylesheets/terminal.css" rel="stylesheet" type="text/css">
-    <link href="stylesheets/periodic.css" rel="stylesheet" type="text/css">
+            href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+            rel="stylesheet"  type='text/css'>
+    <link href="static/calligraphy.css" rel="stylesheet" type="text/css">
+    <link href="static/counter.css" rel="stylesheet" type="text/css">
+    <link href="static/nav.css" rel="stylesheet" type="text/css">
+    <link href="static/share.css" rel="stylesheet" type="text/css">
+    <link href="static/terminal.css" rel="stylesheet" type="text/css">
+    <link href="static/periodic.css" rel="stylesheet" type="text/css">
+    <link href="static/editor.css" rel="stylesheet" type="text/css">
+    <link href="static/helloWorld.css" rel="stylesheet" type="text/css">
 </head>
+<body>
 <header>
     <nav>
         <div id="brand">
@@ -39,21 +43,23 @@
             </ul>
         </div>
     </nav>
+
     <section id="hero-section">
         <div id="calligraphy">
             <div class="container">
                 <h1>Hello World</h1>
-<div class="fakeScreen">
-    <div class="container">
-  <p class="line1">&#91;&nbsp;&ldquo;I'm a software engineer.&rdquo;,<span class="cursor1">_</span></p>
-  <p class="line2">&nbsp;&nbsp;&ldquo;I'm a web developer.&rdquo;,<span class="cursor2">_</span></p>
-  <p class="line3">&nbsp;&nbsp;&ldquo;Let's work together!&rdquo;&nbsp;&#93;<span class="cursor3">_</span></p>
-  <p class="line4">><span class="cursor4">_</span></p>
-        </div>
-</div>
+            </div>
+            <div id="fakeScreen">
+                <div class="container">
+                    <p class="line1">&#91;&nbsp;&ldquo;I'm a web developer.&rdquo;,<span class="cursor1">_</span></p>
+                    <p class="line2">&nbsp;&nbsp;&ldquo;I'm a software engineer.&rdquo;,<span class="cursor2">_</span></p>
+                    <p class="line3">&nbsp;&nbsp;&ldquo;Let's work together!&rdquo;&nbsp;&#93;<span class="cursor3">_</span></p>
+                    <p class="line4">><span class="cursor4">_</span></p>
+                </div>
             </div>
         </div>
     </section>
+
 </header>
 
 <section id="section00">
@@ -81,62 +87,33 @@
                 </div>
             </div>
         </div>
-    <!-- <div id="head-line"></div> -->
 </section>
 
 <section id="section01">
-    <head>
-        <style type="text/css" media="screen">
-            #editor {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                background-color: #09111b;
-                position: relative;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-            }
-            @font-face {
-                font-family: 'Nunito';
-                src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
-                font-weight: normal;
-                font-style: normal;
-                font-size: large;
-            }
-        </style>
-    </head>
-
-    <pre id="editor">function foo(items) {
-    var i;
-    for (i = 0; i &lt; items.length; i++) {
-        alert("Ace Rocks " + items[i]);
-    }
-        }</pre>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js" type="text/javascript" charset="utf-8"></script>
-
-<script>
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/monokai");
-    editor.setShowPrintMargin(false);
-    editor.session.setMode("ace/mode/c_cpp");
-    editor.setValue("#include <stdio.h>\n\n\nint main() {\n    // Complete the code.\n    return 0;\n}\n");
-    editor.clearSelection();
-    editor.setOptions({
-        fontFamily:"Nunito",
-        fontSize: "20px",
-        enableBasicAutocompletion: true,
-        enableSnippets: true,
-        enableLiveAutocompletion: true
-    });
-</script>
+    <main class="view">
+    <div class="window">
+    <div class="window-header">
+      <div class="action-buttons"></div>
+      <div class="controls">
+        <div>language: <a class="switch-language" href="">js</a></div>
+        <div>style: <a class="switch-style" href="">dracula</a></div>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="editor language-js" data-gramm="false"></div>
+    </div>
+  </div>
+    </main>
     <section id="subsection">
         <div id="heading"></div>
     </section>
 </section>
 <section id="section02">
+    <div class="inner">
+
+            <h1>Internet Table</h1>
+        <div id="heading"></div>
+        <div class="spacer"></div>
 
     <div class="periodic-table">
         <div class="empty-spacer-1"></div>
@@ -316,6 +293,8 @@
             </div>
         </div>
     </div>
+
+    </div>
 </section>
 <section id="section03">
     <div id="heading"></div>
@@ -331,5 +310,8 @@
 
   <a target="_blank" class="fab menu" tooltip="Share"><i class="fa fa-share-nodes"></i></a>
 </div>
+<footer>
+    <h4>Disclaimer: This is a geeky site. All rights reserved ®</h4>
+</footer>
 </body>
 </html>

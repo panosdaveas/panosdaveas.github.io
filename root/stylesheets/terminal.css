@@ -1,31 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-body {
-  background-color: #272727;
-}
 
-.fakeScreen {
+#fakeScreen {
   background-color: inherit;
-  box-sizing: border-box;
-  width: 350px;
-  margin: 0 auto;
-  padding-top: 40px;
-  /*border-bottom-left-radius: 5px;*/
-  /*border-bottom-right-radius: 5px;*/
+  padding-top: 4vh;
 }
 
 .container p {
-  position: relative;
-  left: 50%;
-  margin-left: -8.5em;
-  text-align: left;
-  font-family: Nunito;
-  /* display: flex; */
-  font-size: 3vh;
-  font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  line-height: 2;
+  /*background-color: white;*/
+  /*width: 100%;*/
+    position: relative;
+    left: 50%;
+    margin-left: -8.5em;
+    text-align: left;
+    font-size: 3vh;
+    font-family: Nunito;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    line-height: 2;
 }
 
 span {
@@ -167,24 +160,24 @@ span {
 
 @-webkit-keyframes type {
   to {
-    width: 17em;
+    width: 18em;
   }
 }
 
 @-moz-keyframes type {
   to {
-    width: 17em;
+    width: 18em;
   }
 }
 
 @-o-keyframes type {
   to {
-    width: 17em;
+    width: 18em;
   }
 }
 
 @keyframes type {
   to {
-    width: 17em;
+    width: 18em;
   }
 }
