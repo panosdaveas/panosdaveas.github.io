@@ -16,16 +16,17 @@ html {
   height: 33vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: center;
   background-color: #09111b;
 }
-.container h1 {
+
+.container1 h1 {
   font-size: 6vw;
   color: var(--var-color);
   position: relative;
 }
-.container h1::before {
+.container1 h1::before {
   position: absolute;
   content: attr(data-text);
   text-shadow: 0px 0px 20px var(--var-color);

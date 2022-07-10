@@ -8,6 +8,7 @@ h1 {
   font: 700 3em "Poppins", sans-serif;
   color: #f1f5f6;
   text-align: center;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 h5 {

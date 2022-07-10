@@ -1,81 +1,94 @@
-#editor {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #09111b;
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Mono&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css");
+
+/*body {*/
+/*  background-image: linear-gradient(*/
+/*    109.6deg,*/
+/*    rgba(253, 199, 141, 1) 11.3%,*/
+/*    rgba(249, 143, 253, 1) 100.2%*/
+/*  );*/
+/*  font-family: Lato, sans-serif;*/
+/*  font-weight: 300;*/
+/*  font-size: 15px;*/
+/*  margin: 0;*/
+/*}*/
+/**,*/
+/**:before,*/
+/**:after {*/
+/*  box-sizing: border-box;*/
+/*}*/
+/**:focus {*/
+/*  outline: none;*/
+/*}*/
+/*a,*/
+/*a:visited,*/
+/*a:active {*/
+/*  color: black;*/
+/*}*/
+main {
+  min-height: 100%;
+  /*min-height: 100vh;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.btn{
-    margin: 4px;
-    box-shadow: 1px 1px 5px #888888;
+.window {
+  background: #202e38;
+  width: 547px;
+  border-radius: 6px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.window .window-header {
+  height: 25px;
+  background: Gainsboro;
+  position: relative;
+}
+.window .window-header .action-buttons {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background: Crimson;
+  border-radius: 50%;
+  box-shadow: 15px 0 0 Orange, 30px 0 0 LimeGreen;
+}
+.editor {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  font-family: "PT Mono", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 340px;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 10px;
+  resize: none !important;
+  tab-size: 4;
+}
+.editor.hljs {
+  padding: 10px;
+}
+.controls {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -10px;
+  display: flex;
+}
+.controls > div:first-child > a {
+  display: inline-block;
+  width: 40px;
+}
+.features {
+  width: 547px;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
-.btn-sky {
-	color: #fff;
-	background-color: #0bacd3;
-	border-bottom:2px solid #098aa9;
-}
-
-.btn-sky:hover,.btn-sky.active:focus, .btn-sky:focus{
-	color: #fff;
-	background-color: #29b6d8;
-	border-bottom:2px solid #2192ad;
-	outline: none;
-}
-
-.btn-sky:active, .btn-sky.active {
-	color: #fff;
-	background-color: #0a97b9;
-	border-top:2px solid #087994;
-	outline-offset: none;
-	margin-top: 2px;
-}
-
-.btn-sky.active:focus{
-	color: #fff;
-	background-color: #df6a78;
-	border-bottom:2px solid #b25560;
-	outline: none;
-}
-
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus {
-    outline: none;
-    outline-offset: 0px;
-}
-
-/*Compile Button CSS End*/
-
-.col-md-12.col-sm-12.codeSide {
-    background: #272822;
-    height: 40em;
-    padding-left: 21px;
-    border-radius: 10px;
-    padding-top: 7px;
-}
-
-.ace_gutter {
-    min-width: 50px;
-}
-
-.ace_scroller {
-	margin-left: 5px;
-}
-
-input#compile {
-    margin-top: 5px;
-    float: right;
-}
-
-/*Language Select CSS */
-button.btn.dropdown-toggle.btn-default {
-    width: 42%;
-    margin: 4px 2px 6px 4px;
-}
