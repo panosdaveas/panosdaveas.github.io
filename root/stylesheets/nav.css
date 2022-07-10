@@ -31,15 +31,6 @@ header {
   display: flex;
 }
 
-footer {
-  width: 100vw;
-  height: 10vh;
-  background: #09111b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
 
 /*** Navigation Styles ***/
 nav {
@@ -271,10 +262,12 @@ section:nth-child(even) {
     transform: scale(0.8);
   }
 }
-/*#youtube {*/
-/*  position: fixed;*/
-/*  right: 2vw;*/
-/*  bottom: 2vh;*/
-/*  font-size: 30px;*/
-/*  color: #fff;*/
-/*}*/
+footer {
+  width: 100vw;
+  height: 10vh;
+  background: #09111b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
