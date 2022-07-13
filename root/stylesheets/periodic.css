@@ -1,10 +1,11 @@
-body {
-  background: #202e38;
-  font-family: "Poppins", sans-serif;
-}
+/*body {*/
+/*  background: #202e38;*/
+/*  font-family: "Poppins", sans-serif;*/
+/*}*/
 
 h1 {
-  margin: 2em auto 0;
+  /*margin: 2em auto 0;*/
+  margin-top: 40px;
   font: 700 3em "Poppins", sans-serif;
   color: #f1f5f6;
   text-align: center;

@@ -6,6 +6,7 @@
 }
 .container h1 {
     /*    new lines*/
+    margin: 2em auto 0;
     display: grid;
     place-items: center;
     /*    new lines*/

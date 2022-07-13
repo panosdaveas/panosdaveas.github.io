@@ -1,5 +1,13 @@
 /*** Mixins & Default Styles ***/
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  background: #202e38;
+  font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-size: 100% 100%;
+    color: #fff;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +18,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: inherit;
 }
 
 .spacer {
@@ -195,20 +204,28 @@ section:nth-child(even) {
 
 .inner-section {
   display: grid;
-  row-gap: 50px;
+  align-items: center;
+  /*row-gap: 50px;*/
+  width: inherit;
+  height: inherit;
 }
 
-#section-grid {
-  height: 50px;
+.section-grid {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 46.5vh;
+  width: inherit;
+  /*padding: 20px;*/
 }
 
-#section-grid:nth-child(odd) {
-  background: #79edfc;
-}
+/*.section-grid:nth-child(odd) {*/
+/*  background: #79edfc;*/
+/*}*/
 
-#section-grid:nth-child(even) {
-  background: #fa6c98;
-}
+/*.section-grid:nth-child(even) {*/
+/*  background: #fa6c98;*/
+/*}*/
 
 #subsection {
   background: #79edfc;
