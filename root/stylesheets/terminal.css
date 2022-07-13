@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-#fakeScreen {
+#terminal {
   background-color: inherit;
   padding-top: 4vh;
 }
@@ -8,17 +8,17 @@
 .container p {
   /*background-color: white;*/
   /*width: 100%;*/
-    position: relative;
-    left: 50%;
-    margin-left: -8.5em;
-    text-align: left;
-    font-size: 3vh;
-    font-family: Nunito;
-    font-family: monospace;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    line-height: 2;
+  position: relative;
+  left: 50%;
+  margin-left: -8.5em;
+  text-align: left;
+  font-size: 3vh;
+  font-family: Nunito;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  line-height: 2;
 }
 
 span {

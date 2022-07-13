@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 #calligraphy {
     height: 100%;
-    /*height: calc(100vh - 100px);*/
     width: 100%;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*padding-top: 20vh;*/
-    /*align-items: flex-start;*/
-    /*justify-content: center;*/
     background-color: inherit;
-    /*background-color: white;*/
 }
 .container h1 {
-/*h1 {*/
+    /*    new lines*/
+    display: grid;
+    place-items: center;
+    /*    new lines*/
     font-size: 10vh;
     font-family: "Pacifico";
     color: white;
