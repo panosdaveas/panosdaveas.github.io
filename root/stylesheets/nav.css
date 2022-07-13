@@ -186,6 +186,30 @@ section {
   justify-content: center;
 }
 
+section:nth-child(odd) {
+  background: #79edfc;
+}
+section:nth-child(even) {
+  background: #fa6c98;
+}
+
+.inner-section {
+  display: grid;
+  row-gap: 50px;
+}
+
+#section-grid {
+  height: 50px;
+}
+
+#section-grid:nth-child(odd) {
+  background: #79edfc;
+}
+
+#section-grid:nth-child(even) {
+  background: #fa6c98;
+}
+
 #subsection {
   background: #79edfc;
   width: 33vw;
@@ -193,12 +217,7 @@ section {
   display: flex;
   justify-content: center;
 }
-section:nth-child(odd) {
-  background: #79edfc;
-}
-section:nth-child(even) {
-  background: #fa6c98;
-}
+
 
 #heading {
   width: 120px;
