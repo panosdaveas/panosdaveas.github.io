@@ -107,7 +107,7 @@
   background: #E75448;
 }
 
-.terminal-windows section.terminal {
+.terminal-windows section.terminals {
   justify-content: left;
   text-align: left;
   color: white;
@@ -136,18 +136,18 @@
 /*.terminal-windows section.terminal iframe.visible {*/
 /*  visibility: visible;*/
 /*}*/
-.terminal-windows section.terminal iframe {
+.terminal-windows section.terminals iframe {
   border: none;
   width: 100%;
   /*content-visibility: hidden;*/
   visibility: hidden;
 }
 
-.terminal-windows section.terminal iframe.visible {
+.terminal-windows section.terminals iframe.visible {
   visibility: visible;
   /*content-visibility: visible;*/
 }
 
-.terminal-data { display: none; }
-.terminal-windows .gray { color: gray; }
-.terminal-windows .green { color: green;}
+/*.terminal-data { display: none; }*/
+/*.terminal-windows .gray { color: gray; }*/
+/*.terminal-windows .green { color: green;}*/
