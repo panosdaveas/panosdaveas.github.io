@@ -215,6 +215,7 @@ section:nth-child(even) {
   padding-bottom: 40px;
   width: inherit;
   height: inherit;
+  width: 80vw;
 }
 
 .section-grid {
