@@ -207,6 +207,7 @@ section:nth-child(even) {
 .inner-section {
   display: grid;
   align-items: center;
+  justify-items: center;
   /*row-gap: 50px;*/
   margin-right: auto;
   margin-left: auto;
