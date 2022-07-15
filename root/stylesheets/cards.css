@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-/*body {*/
-/*  font-family: "Muli", sans-serif;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  height: 100vh;*/
-/*  overflow: hidden;*/
-/*  margin: 0;*/
-/*}*/
-
 .card {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -30,12 +20,14 @@
 
 .panel {
   background-size: auto 100%;
-  /*background-size: auto 50%;*/
   background-position: center;
   background-repeat: no-repeat;
-  background: #09111b;
+  /*background: #09111b;*/
+  background: #30353A;
+  /*background: -webkit-linear-gradient(90deg, #30353A 95%, #E0E8F0 5%);*/
   height: 50vh;
-  border-radius: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
@@ -74,3 +66,83 @@
   }
 }
 
+.terminal-windows {
+  text-align: left;
+    width: 100%;
+  height: calc(50vh - 30px);
+  border-radius: 10px;
+  /*margin: auto;*/
+  /*position: relative;*/
+  position: absolute;
+}
+
+.terminal-windows header {
+  width: 100%;
+  background: #E0E8F0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+.terminal-windows header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.terminal-windows header .button.green {
+  background: #3BB662;
+}
+
+.terminal-windows header .button.yellow {
+  background: #E5C30F;
+}
+
+.terminal-windows header .button.red {
+  background: #E75448;
+}
+
+.terminal-windows section.terminal {
+  justify-content: left;
+  text-align: left;
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  background: #30353A;
+  padding: 10px;
+  /*box-sizing: border-box;*/
+  /*position: absolute;*/
+  width: 100%;
+  height: inherit;
+  top: 30px;
+  bottom: 0;
+  /*overflow: hidden;*/
+  overflow: auto;
+}
+.terminal-windows section.terminal .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.terminal-data { display: none; }
+.terminal-windows .gray { color: gray; }
+.terminal-windows .green { color: green;}
