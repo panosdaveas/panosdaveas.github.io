@@ -15,6 +15,26 @@ body {
   padding: 0;
 }
 
+h1 {
+  /*margin: 2em auto 0;*/
+  margin-top: 40px;
+  font: 700 3em "Poppins", sans-serif;
+  color: #f1f5f6;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+h5 {
+  margin: 0 auto 2em;
+  font: 400 1.3em "Poppins", sans-serif;
+  color: #f1f5f6;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
 .inner {
   align-items: center;
   display: block;
@@ -239,8 +259,10 @@ section:nth-child(even) {
   background: #79edfc;
   width: 33vw;
   height: calc(100vh - 100px);
-  display: flex;
+  display: block;
   justify-content: center;
+  align-items: center;
+  vertical-align: center;
 }
 
 
