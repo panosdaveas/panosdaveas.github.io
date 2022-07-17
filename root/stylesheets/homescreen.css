@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-#calligraphy {
-    height: 100%;
-    width: 100%;
+
+#homescreen {
+    /*height: 100%;*/
+    /*width: 100%;*/
     background-color: inherit;
 }
-.container h1 {
-    /*    new lines*/
-    margin: 2em auto 0;
+
+#homescreen h1 {
+    margin: 1em auto 0;
     display: grid;
     place-items: center;
-    /*    new lines*/
     font-size: 10vh;
     font-family: "Pacifico";
     color: white;

@@ -2,10 +2,10 @@
 
 #terminal {
   background-color: inherit;
-  padding-top: 4vh;
+  /*padding-top: 4vh;*/
 }
 
-.container p {
+.container-terminal p {
   /*background-color: white;*/
   /*width: 100%;*/
   position: relative;
