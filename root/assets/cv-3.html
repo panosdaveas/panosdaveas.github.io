@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  body {
+    text-align: left;
+    font: 200 20px "Nunito", sans-serif;
+    color: #535353;
+  }
+</style>
+<body>
+<h1 id="crypto-stats">Crypto-Stats</h1>
+<p>Implementation of bitcoin asset database</p>
+<h1 id="overview">Overview</h1>
+<p>Run a containerized <code>mongoDB</code>.</p>
+<h1 id="usage">Usage</h1>
+<p>Run it at the foreground (hit ctrl-c to stop):</p>
+<pre><code><span class="hljs-attribute">docker-compose up</span>
+</code></pre><p>or</p>
+<p>Run it at the background:</p>
+<pre><code>docker-compose up <span class="hljs-_">-d</span>
+</code></pre><p>Stop it:</p>
+<pre><code><span class="hljs-attribute">docker-compose down</span>
+</code></pre><p>Use Docker GUI to set up custom ports and volume directories. Defaults
+are:</p>
+<ul>
+<li>port: 27017</li>
+<li>database volume: ./database</li>
+</ul>
+<h1 id="notes">Notes</h1>
+<p>Be sure to have your system&#39;s <code>mongo</code>&#39;s service stopped, or running at a different port.</p>
+<h1 id="api">API</h1>
+<p>Request limit from <a href="https://docs.coinapi.io/#md-rest-api">coinAPI</a> = 100 / day</p>
+<h1 id="pipenv">PIPENV</h1>
+<p>to enable <code>pipenv</code>, run</p>
+<pre><code>$ pipenv <span class="hljs-keyword">shell</span>
+$ <span class="hljs-keyword">python</span> main.<span class="hljs-keyword">py</span>
+</code></pre><p>to run without loading the virtual environment:</p>
+<pre><code>pipenv <span class="hljs-keyword">run</span><span class="bash"> python main.py</span>
+</code></pre><h1 id="crontab">Crontab</h1>
+<p>add a cronjob to run <code>main.py</code> from inside\
+the pipenv shell :</p>
+<pre><code>*/<span class="hljs-number">10</span> * * * * <span class="hljs-keyword">cd</span> path/<span class="hljs-keyword">to</span>/<span class="hljs-keyword">file</span>/ &amp;&amp; /usr/local/bin/pipenv run <span class="hljs-keyword">python</span> main.<span class="hljs-keyword">py</span>
+</code></pre><h1 id="current-state">Current State</h1>
+<p><img src="https://user-images.githubusercontent.com/63146477/112281434-b8e21100-8c8e-11eb-97e7-7b3577a1dad3.gif" alt="Screen Recording 2021-03-24 at 10 46 33 AM"></p>
+
+
+</body>
+</html>
