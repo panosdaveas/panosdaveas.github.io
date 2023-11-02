@@ -62,7 +62,7 @@ ul {
 #logo {
   width: 55px;
   height: 55px;
-  background-image: url("root/assets/logo_white_transparent.png");
+  background-image: url("/assets/logo_white_transparent.png");
   border-radius: 50%;
   cursor: pointer;
 }
