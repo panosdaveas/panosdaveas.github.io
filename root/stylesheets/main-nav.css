@@ -65,8 +65,8 @@ ul {
   /* background: #fff; */
   background-image: url("../assets/logo_white_transparent.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
+  background-size: contain;
+  /* border-radius: 50%; */
   cursor: pointer;
 }
 
