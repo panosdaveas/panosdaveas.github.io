@@ -64,7 +64,7 @@ ul {
   height: 55px;
   background-image: url("/root/assets/logo_white_transparent.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   border-radius: 50%;
   cursor: pointer;
 }
